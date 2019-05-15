@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="Style/bootstrap.min.css">
+    <link rel="stylesheet" href="Style/style.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+</head>
+<body>
+   <div class="container">
+       <div class="col-md-7" id="main">
+           <div class="header">
+               <p>Javascript Onsibmit Even Example</p>
+
+               <p id="ke"></p>
+           </div>
+           <form>
+               <div class="form-row" id="name">
+                   <div class="form-group col-md-12">
+                       <label for="inputEmail4">Name :</label>
+                       <input id="name1" type="text" class="form-control" name="username" placeholder="Enter your Name">
+                   </div>
+               </div>
+               <div class="form-row" id="email">
+                   <div class="form-group col-md-12">
+                       <label for="inputEmail4">Email :</label>
+                       <input id="email1" type="email" class="form-control"  name="password" placeholder="Enter your Email">
+                   </div>
+               </div>
+
+               <div class="form-row" id="sex">
+
+                   <div class="form-group col-md-3">
+                       <label for="inputZip">Gender :</label>
+                   </div>
+               </div>
+               <div class="form-group">
+                   <div class="form-check">
+                       <input id="male" type="radio" name="sex" value="Male">Male
+                       <input id="female" type="radio" name="sex" value="Female">Female
+                   </div>
+               </div>
+               <div class="form-row" id="contact">
+                   <div class="form-group col-md-12">
+                       <label for="inputEmail4">Contact No :</label>
+                       <input id="contact1" type="text" class="form-control" name="contact" placeholder="Enter your Phone">
+                   </div>
+               </div>
+               <button onclick="validateForm()" type="submit" class="btn btn-primary" id="submit">Submit</button>
+           </form>
+       </div>
+   </div>
+   <script type="text/javascript">
+       function validateForm() {
+           var name =document.getElementById('name1').value;
+           var email =document.getElementById('email1').value;
+           var sex;
+           var radiomale=document.getElementById('male');
+           var ismale =radiomale.checked;
+           if(ismale==true){
+               sex="Male"
+           }
+           else
+           {
+               sex="Female";
+           }
+           var contact =document.getElementById('contact1').value;
+           document.write("Name :"+name);
+           document.write("<br/>");
+           document.write("Email :"+email);
+           document.write("<br/>");
+           document.write("Gender :"+sex);
+           document.write("<br/>");
+           document.write("Contact :"+contact);
+
+       }
+   </script>
+
+</body>
+</html>

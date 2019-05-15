@@ -1,0 +1,18 @@
+.header{
+    text-align: center;
+    font-size: 20px;
+}
+
+#ke
+{
+    border-bottom: 1px solid;
+}
+#female{
+    margin-left: 20px;
+}
+#submit{
+    width: 100%;
+    background-color: yellow;
+    color: brown;
+    font-weight: bold;
+}
